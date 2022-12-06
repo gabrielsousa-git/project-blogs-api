@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const { User } = require('../models');
 
 const secret = process.env.JWT_SECRET;
-const jwtConfig = { algorithm: 'HS256', expiresIn: '1w' };
+const jwtConfig = { algorithm: 'HS256', expiresIn: '7d' };
 
 const logInUser = async (email, password) => {
   const logedUser = await User.findOne({ where: { email, password } });
