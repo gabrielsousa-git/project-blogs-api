@@ -13,7 +13,7 @@ const logInUser = async (email, password) => {
   //   return token;
   // }
 
-  return { user: logedUser.dataValues, token };
+  return { user: logedUser, token };
 };
 
 module.exports = {

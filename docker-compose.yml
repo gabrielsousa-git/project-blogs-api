@@ -17,7 +17,7 @@ services:
     # Substitui o comando padrão da imagem do node
     command: bash
     # Restarta a imagem caso algo a faça parar
-    restart: always
+    # restart: always
     # Diretório padrão de execução
     working_dir: /app
     # Lista de volumes (diretórios) mapeados de fora para dentro do container
@@ -37,7 +37,7 @@ services:
     # Configura as variáveis de ambiente dentro do container
     environment:
       MYSQL_USER: root
-      MYSQL_PASSWORD: password
+      MYSQL_PASSWORD: Y@mamot0
       MYSQL_HOST: db # Nome do service logo abaixo
       JWT_SECRET: secretJWT
       API_HOST: 'node'

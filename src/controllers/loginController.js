@@ -4,7 +4,7 @@ const logInUser = async (req, res) => {
   const { email, password } = req.body;
   const result = await loginService.logInUser(email, password);
 
-  if (!result) {
+  if (!result.user) {
     return res.status(400).json({ message: 'Invalid fields' });
   }
 
